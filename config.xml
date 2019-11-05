@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget id="tw.edu.nfu.MaizaComestic" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<!-- versionCode is optional and Android only -->
+  <name>MaizaComestic</name>
+  <description>
+      An example for phonegap build APP from MAI DOAN KIM YEN.
+  </description>
+  <author href="https://www.facebook.com/vu.thientuyet" email="maidoankimyen@gmail.com">
+      MAI DOAN KIM YEN
+  </author>
+  <content src="index.html" />
+  <platform name="android">
+    <icon src="res/cosmetics.jpg" />
+    <icon src="res/android/cosmetics.jpg" density="ldpi" />
+    <icon src="res/android/cosmetics.jpg" density="mdpi" />
+    <icon src="res/android/cosmetics.jpg" density="hdpi" />
+    <icon src="res/android/cosmetics.jpg" density="xhdpi" />
+  </platform>
+</widget>

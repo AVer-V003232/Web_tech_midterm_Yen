@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MAIZA COSMETICS APP</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+            a:link {
+                color: black;
+                text-decoration: none;
+            }
+            
+            a:visited {
+                color: black;
+                text-decoration: none;
+            }
+            
+            a:hover {
+                color: black;
+                text-decoration: none;
+            }
+            
+            a:active {
+                color: black;
+                text-decoration: none;
+            }
+            body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box;}
+    
+    /* Button used to open the chat form - fixed at the bottom of the page */
+    .open-button {
+      background-color: #555;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      opacity: 0.8;
+      position: fixed;
+      bottom: 23px;
+      right: 28px;
+      width: 280px;
+    }
+    
+    /* The popup chat - hidden by default */
+    .chat-popup {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      right: 15px;
+      border: 3px solid #f1f1f1;
+      z-index: 9;
+    }
+    
+    /* Add styles to the form container */
+    .form-container {
+      max-width: 300px;
+      padding: 10px;
+      background-color: white;
+    }
+    
+    /* Full-width textarea */
+    .form-container textarea {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border: none;
+      background: #f1f1f1;
+      resize: none;
+      min-height: 200px;
+    }
+    
+    /* When the textarea gets focus, do something */
+    .form-container textarea:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+    
+    /* Set a style for the submit/send button */
+    .form-container .btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom:10px;
+      opacity: 0.8;
+    }
+    
+    /* Add a red background color to the cancel button */
+    .form-container .cancel {
+      background-color: red;
+    }
+    
+    /* Add some hover effects to buttons */
+    .form-container .btn:hover, .open-button:hover {
+      opacity: 1;
+    }
+    
+        </style>
+</head>
+<body>
+    
+    <div is="page" id="home" data-role="page">
+        <div data-role="header" data-position="fixed" style="background-color: pink;">
+            <h1 style="color:white;margin-top: 10px;;text-align:center;font-size:30px;">MAIZA COMESTICS</h1>
+            <a class="ui-btn ui-btn-right ui-btn-icon-left ui-icon-info ui-btn-icon-notext ui-corner-all" style="margin:12px; width: 50px; height: 50px;" href="#Note"></a>
+        </div>
+        <div style="margin-top: 60px;" role="main" class="ui-content">
+            <div is="grid" class="ui-grid-b" style="height:130px">
+                <div class="ui-block-a" style="height:100%;text-align:center">
+                    <a href="makeup.html" rel="external">
+                    <img src="images/make-up.png" style="width:60px; margin:5px 15px 5px 18px">
+                    <h5  style="text-align:center; margin-top:-5px;">Makeup</h5>
+                    </a>
+                </div>
+                <div class="ui-block-b" style="height:100%;text-align:center">
+                    <a href="skincare.html" rel="external">
+                    <img  src="images/lotion.png" style="width:70px; margin-left:10px; margin-top: -4px;">
+                    <h5  style="text-align:center; margin-top:-3px;margin-left:12px;">Skin Care</h5></a>
+                </div>
+                <div class="ui-block-c" style="height:100%;text-align:center">
+                    <a href="body.html" rel="external">
+                    <img  src="images/body.png" style="width:60px; margin:5px 15px 5px 18px">
+                    <h5  style="text-align:center; margin-top:-5px;">Body Care</h5></a>
+                </div>
+            </div>
+            <div is="grid" class="ui-grid-b" style="height:130px">
+                <div class="ui-block-a" style="height:100%;text-align:center">
+                    <a href="Hair.html" rel="external">
+                    <img  src="images/hair.png" style="width:70px; margin:0px 10px 0px 12px">
+                    <h5  style="text-align:center; margin-top:-5px;">Hair Care</h5>
+                    </a>
+                </div>
+                <div class="ui-block-b" style="height:100%;text-align:center">
+                    <a href="fra.html" rel="external">
+                    <img  src="images/fragrance.png" style="width:60px; margin:5px 15px 5px 25px">
+                    <h5  style="text-align:center; margin-top:-5px;">Fragrance</h5></a>
+                </div>
+                <div class="ui-block-c" style="height:100%;text-align:center">
+                    <a href="info.html" rel="external"> 
+                    <img  src="images/buy.png" style="width:70px; margin-left:6px;">
+                    <h5  style="text-align:center; margin-top:-5px;margin-left:10px;">Payment</h5>
+                    </a>
+                </div>
+            
+                </div>
+            </div>
+        
+        <div is="footer" data-role="footer" data-position="fixed" data-theme="b">
+            <h3>@MAIZA COSMETICS COMPANY</h3>            
+        </div>
+    </div>
+    <div id="Note" data-role="page" style="background-color:white">
+            <div data-role="header" data-position="fixed" style="background-color: pink;">
+                <h3 style="color:white;font-weight:bold;font-family:Calibri;font-size:35px;text-align: center;">MAIZA COSMETICS COPANY<br>BY MAI DOAN KIM YEN<BR>
+                         If you have something wrong<br> Don't mind contact us.<br>
+                        Our phone number : 123456789<br>
+                </h3>
+    
+                <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse" style = "color : red;">Back</a>
+            </div>
+
+            <button style="background-color: pink; color: aliceblue;" class="open-button" onclick="openForm()">CHAT WITH US</button>
+
+            <div class="chat-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+                <h1>Chat</h1>`1a
+
+                <label for="msg"><b>Message</b></label>
+                <textarea placeholder="Type message.." name="msg" required></textarea>
+
+                <button type="submit" class="btn">Send</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+            </div>
+
+            <script>
+            function openForm() {
+            document.getElementById("myForm").style.display = "block";
+            }
+
+            function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+            }
+            </script>
+    </div>
+    
+</body>
+</html>

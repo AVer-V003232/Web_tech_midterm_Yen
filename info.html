@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    
+    <div is="page" id="home" data-role="page">
+            <div is="header" data-role="header" data-position="fixed">
+                    <h3>Payment</h3>
+                    <a class="ui-btn ui-btn-left  ui-btn-icon-left ui-icon-home ui-btn-icon-notext ui-corner-all" data-transition="slide" href="index.html" rel="external">Back</a>
+                </div>
+        <form style="margin-left: 200px; margin-right: 200px;">
+                    <ul data-role="listview" data-inset="true">
+                        <li class="ui-field-contain">
+                            <label for="name2">Name:</label>
+                            <input type="text" name="name2" id="name2" value="" data-clear-btn="true">
+                        </li>
+                        <li class="ui-field-contain">
+                                    <label for="textarea2">Email address:</label>
+                                <textarea cols="40" rows="8" name="textarea2" id="textarea2"></textarea>
+                                </li>
+                        <li class="ui-field-contain">
+                            <label for="textarea2">Note:</label>
+                        <textarea cols="40" rows="8" name="textarea2" id="textarea2"></textarea>
+                        </li>
+                        
+                        <li class="ui-field-contain">
+                            <label for="flip2">Remember information:</label>
+                            <select name="flip2" id="flip2" data-role="slider">
+                                <option value="off">Off</option>
+                                <option value="on">On</option>
+                            </select>
+                        </li>
+                        <li class="ui-field-contain">
+                            <label for="slider2">Amount:</label>
+                            <input type="range" name="slider2" id="slider2" value="0" min="0" max="100" data-highlight="true">
+                        </li>
+                        <li class="ui-field-contain">
+                            <label for="select-choice-1" class="select">Choose shipping method:</label>
+                            <select name="select-choice-1" id="select-choice-1">
+                                <option value="standard">Standard: 7-10 day</option>
+                                <option value="rush">Rush: 5 days</option>
+                                <option value="express">Express: 2-3 day</option>
+                                <option value="overnight">24 Hours</option>
+                            </select>
+                        </li>
+                        <li class="ui-body ui-body-b">
+                            <fieldset class="ui-grid-a" style="margin-left: 400px;">
+                                    <div class="ui-block-b"><button type="submit" class="ui-btn ui-corner-all ui-btn-a">Submit</button></div>
+                            </fieldset>
+                        </li>
+                    </ul>
+                </form>  
+</body>
+</html>
